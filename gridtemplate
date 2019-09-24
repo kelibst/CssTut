@@ -1,0 +1,110 @@
+<!--
+     <section class="test-grid">
+      
+        <div class="row">
+                
+            <div class="col-6">
+                this 1 of two
+            </div>
+            <div class="col-6">
+                this 1 of two
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                this 1 of 4
+            </div>
+            <div class="col-3">
+                this 1 of 4
+            </div>
+            <div class="col-3">
+                    this 1 of 4
+                </div>
+                <div class="col-3">
+                        this 1 of 4
+                    </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-6">
+                this 1 of two
+            </div>
+            <div class="col-6">
+                this 1 of two
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                this 1 of two
+            </div>
+            <div class="col-6">
+                this 1 of two
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                this 1 of two
+            </div>
+            <div class="col-2">
+                this 1 of two
+            </div>
+            <div class="col-2">
+                    this 1 of two
+                </div>
+                <div class="col-2">
+                        this 1 of two
+                    </div>
+                    <div class="col-2">
+                            this 1 of two
+                        </div>
+                        <div class="col-2">
+                                this 1 of two
+                            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                this 1 of two
+            </div>
+            <div class="col-2">
+                this 1 of two
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                this 1 of two
+            </div>
+            <div class="col-8">
+                this 1 of two
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                this 1 of two
+            </div>
+            
+            <div class="col-3">
+                    this 1 of two
+                </div>
+                <div class="col-3">
+                        this 1 of two
+                    </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                this 1 of two
+            </div>
+            <div class="col-6">
+                this 1 of two
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                this 1 of two
+            </div>
+            <div class="col-6">
+                this 1 of two
+            </div>
+        </div>
+       
+    </section>
+-->

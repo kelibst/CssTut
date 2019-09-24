@@ -1,0 +1,86 @@
+.popup{
+    height: 100vh;
+    width: 100%;
+    background: rgba($color-black, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+    
+    //open state of popup
+    &:target{
+        visibility: visible;
+        opacity: 1;
+    }
+    &:target &_content{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    &_img{
+       
+        &1,
+        &2{
+            height: 50%;
+            width: 100%;
+        }
+    }
+    &_content{
+        border-radius: 2rem;
+        width: 75%;
+        background: $color-white;
+        height: 60rem;
+        box-shadow: 0 2rem 4rem rgba($color-black,.4);
+        @include centerV;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%)scale(0);
+        transition: all .5s .2s;
+    }
+    &_notice{
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    &_paragraph{
+        font-size: 2rem;
+    }
+
+    //styling popup icons
+    &_icons{
+        float: right;
+        width: 4rem;
+        height: 4rem;
+        top:.8rem;
+        border-radius: 50%;
+        background: $color-grey-dark;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            background-image: linear-gradient(to right bottom, $primary-gradient, $secondary-gradient);
+        }
+        &-1,
+        &-2{
+            margin-top: 1rem;
+            display: inline-block;
+            width: 2.5rem;
+            height: 3px;
+            position: relative;
+            background: $color-black;
+            
+            
+        }
+        &-1{
+            transform: rotate(45deg);
+            top: 1rem;
+            
+        }
+        &-2{
+            transform: rotate(-45deg);
+            top: -.2rem;
+           
+        }
+    }
+}

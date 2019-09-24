@@ -1,0 +1,83 @@
+//my grid system is similar to that of bootstrap
+//12 grid system
+.row{
+    max-width: $grid-width;
+    margin-bottom: $space-horizontal;
+    margin: 0 auto;
+    @include respond(tab1){
+        max-width: 75rem;
+    }
+   
+   
+    &:not(:last-child){
+        margin-bottom: $space-vertical;
+        @include respond(tab1){
+            margin-bottom: $space-vertical-small;
+        }
+    }
+    @include clearfix;
+[class^="col-"]{
+    //this selector selects all classes starting from
+    // $ at the begining selects all classes ending with
+    float: left;
+    &:not(:last-child){
+        margin-right: $space-horizontal; 
+        @include respond(tab1){
+            margin-right: 0;
+            margin-bottom: $space-vertical-small;
+        }
+    }
+    @include respond(tab1) {
+        width: 100% !important;
+    }  
+}
+}
+.col-2{
+    width: calc((100% - (#{col(2) - 1} ) *#{$space-horizontal})/#{col(2)});
+}   
+.col-3{
+    width: calc((100% - (#{col(3) - 1} ) *#{$space-horizontal})/#{col(3)});
+   
+}
+.col-4{
+    width: calc((100% - (#{col(4) - 1} ) *#{$space-horizontal})/#{col(4)});
+   
+}
+.col-5{
+    width: calc((100% - (#{col(5) - 1} ) *#{$space-horizontal})/#{col(5)});
+   
+}
+.col-6{
+    width: calc((100% - (#{col(6) - 1} ) *#{$space-horizontal})/#{col(6)});
+}
+.col-7{
+    width: calc((100% - (#{col(7) - 1} ) *#{$space-horizontal})/#{col(7)});
+   
+}
+.col-8{
+    width: calc((100% - (#{col(8) - 1} ) *#{$space-horizontal})/#{col(8)});
+   
+}
+.col-9{
+    width: calc((100% - (#{col(9) - 1} ) *#{$space-horizontal})/#{col(9)});
+   
+}
+.col-10{
+    width: calc((100% - (#{col(10) - 1} ) *#{$space-horizontal})/#{col(10)});
+   
+}
+.col-11{
+    width: calc((100% - (#{col(11) - 1} ) *#{$space-horizontal})/#{col(11)});
+   
+}
+.col-12{
+    width: calc((100% - (#{col(12) - 1} ) *#{$space-horizontal})/#{col(12)});
+   
+}
+.container{
+    max-width: 80%;
+    &-fluid{
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,5 @@
+@function col($n){
+    //writing a simple function to determine the number of required  grids
+    $n1 : 12/$n;
+    @return $n1;
+}

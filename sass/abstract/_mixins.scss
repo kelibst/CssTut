@@ -1,0 +1,51 @@
+@mixin clearfix{
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin centerV {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+//CODES FOR MANAGING THE MEDIA QUERY
+
+/*
+    0 -600PX = PHONE;
+    600 - 900 PX = TABLET PORTRAIT
+    900 - 1200PX  =  TABLET LANDSCAPE
+    1200 - 1800 = NORMAL STYLING
+    1800+ = BIG SCREENS
+
+
+    ====================================================
+    breakpoints 
+    -phone
+    -tab1
+    -tab2
+    -desktop
+
+    ====================================================
+    order of tackling media query
+    base - typography - 
+*/
+
+@mixin respond($breakpoint) {
+    @if($breakpoint == phone){
+        @media (max-width: 37.5em){@content}; //600px
+    }
+    @if($breakpoint == tab1){
+        @media (max-width: 56.25em){@content}; //900px
+    }
+    @if($breakpoint == tab2){
+        @media (max-width: 75em){@content}; //1200
+    }
+    @if($breakpoint == desktop){
+        @media (min-width: 112.5em){@content}; //1800
+    }
+
+}

@@ -1,0 +1,68 @@
+//this is the typography codes
+
+
+
+
+.primary-heading{
+    color: white;
+    text-transform: uppercase;
+    &--main{
+        display: block;
+        font-size: 6rem;
+        font-weight: 600;
+        letter-spacing: 2.5rem;
+        padding: 2rem;
+        animation: movetoLeft  5s 2s 3 ;
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
+    }
+    &--sub{
+        display: block;
+        letter-spacing: .7rem;
+        padding: 2rem;
+        animation: movetoRight 5s 2s 3;
+        margin-bottom: 4rem;
+        font-size: 3rem;
+        @include respond(phone){
+            letter-spacing: .5rem;
+            
+        }
+    }
+}
+.secondary-heading{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $primary-gradient, $secondary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all .2s;
+    letter-spacing: .2rem;
+    text-shadow: 1rem 1rem 2rem rgba($color-black, .8);
+   
+    @include respond(tab1){
+        font-size: 3rem;
+    }
+    @include respond(tab1){
+        font-size: 2.5rem;
+    }
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.2);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .8);
+    }
+}
+.tertiary-heading{
+    font-size: $primary-font-size;
+    font-weight: 700;
+    text-transform: uppercase
+}
+.paragraph{
+    font-size: $primary-font-size;
+    &:not(:last-child){
+        margin-bottom: $u-margin-bottom-2;
+    }
+}

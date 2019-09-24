@@ -1,0 +1,50 @@
+//all the variables for the project goes here
+
+//colors
+
+$color-black: #000;
+$color-white: #fff;
+
+$secondary-grey-light: #f7f7f7;
+$color-grey-dark: #eee; 
+$color-grey-dark-1: #999;
+
+
+$primary-color: #2422b5ad;
+$primary-gradient: #E57373;
+$secondary-gradient: #B71C1C;
+
+$tertiary-gradient-light: rgb(255, 255, 0);
+$tertiary-gradient-dark: rgb(151, 123, 0);
+
+$master-gradient-light: rgb(1, 255, 1);
+$master-gradient-dark: rgb(0, 17, 0);
+
+$footer-gradient-light:rgb(173, 173, 173);
+$footer-gradient-dark:rgb(0, 0, 0);
+
+
+
+
+
+//grid variables
+
+$grid-width: 114rem;
+$space-vertical: 8rem;
+$space-vertical-small:5rem;
+$space-horizontal: 6rem;
+
+//utilities margin-bottom
+
+$u-margin-bottom-2 : 2rem;
+$u-margin-bottom-4 : 4rem;
+$u-margin-bottom-6 : 6rem;
+$u-margin-bottom-8 : 8rem;
+
+$u-margin-top-2 : 2rem;
+$u-margin-top-4 : 4rem;
+$u-margin-top-6 : 6rem;
+$u-margin-top-8 : 8rem;
+
+//font-sizes
+$primary-font-size: 1.6rem;

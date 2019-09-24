@@ -1,0 +1,62 @@
+.footer{
+    background-image: linear-gradient(to right bottom, $footer-gradient-dark, $footer-gradient-light);
+    padding: 10rem;
+    font-size: $primary-font-size;
+    @include respond (tab1){
+        padding: 8rem 0;
+    }
+
+    &_navigation{
+        border-top: 1px solid $color-grey-dark;
+        padding: 2rem 0;
+        display: inline-block;
+        color: $color-grey-dark;
+
+        @include respond (tab1){
+            width: 100%;
+            text-align: center;
+
+        }
+    }
+    &_list{
+        list-style: none;
+    }
+    &_item{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+    &_link{
+        &:link,
+        &:visited{
+            color: $color-grey-dark;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+            padding: 2rem 0;
+        }
+
+        &:hover,
+        &:active{
+            color: $secondary-gradient;
+            box-shadow: 0 1rem 2rem rgba($color-black,.4);
+            transform: rotate(5deg) scale(1.3);
+            
+        }
+    }
+    &_copyright{
+        border-top: 1px solid $color-grey-dark;
+        padding: 2rem 0;
+        color: $color-grey-dark;
+        width: 80%;
+        float: right;
+        @include respond (tab1){
+            width: 100%;
+            text-align: center;
+            float: none;
+            
+        }
+    }
+}

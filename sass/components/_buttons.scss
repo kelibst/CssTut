@@ -1,0 +1,89 @@
+//Buttons scss goes here
+
+
+.btn
+{   &,
+    &:link,
+    &:visited{
+        text-decoration: none;
+        padding: 1.5rem 2rem;
+        text-transform: uppercase;
+        display: inline-block;
+        border-radius: 2rem;
+        transition: all 0.4s;
+        position: relative;
+        font-size: $primary-font-size;
+
+        //changes for <button> elements
+        border: none;
+        cursor: pointer;
+    }
+    &:hover,
+    :focus{
+        outline: none;
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
+        &::after{
+            transform: scaleX(1.5) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active{
+        transform: translateY(-2px);  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .4);
+    }
+    &--white{
+        background: white;
+        color: #777;
+        &::after{
+            background-color: #fff;
+        }
+    }
+
+    &--green{
+        display: inline-block;
+        background: linear-gradient(to right, 
+        $primary-gradient,
+        $secondary-gradient);
+        color: $color-white;
+    }
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .8s;
+    }
+    
+   
+}
+.btn-text{
+    &:link,
+    &:visited{
+        font-size:$primary-font-size;
+        color: $primary-color;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 2px solid $primary-color;
+        padding: 3px;
+        transition: all .2s;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+    &:hover{
+        background-color: $primary-color;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        transform: translateY(-2px);
+    }
+    &:active{
+        box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .2);
+        transform: translateY(0px);
+    }
+}
