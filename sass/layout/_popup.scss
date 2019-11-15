@@ -46,6 +46,8 @@
     }
     &_paragraph{
         font-size: 2rem;
+        display: table;
+        table-layout: 2;
     }
 
     //styling popup icons

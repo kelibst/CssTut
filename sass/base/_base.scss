@@ -7,35 +7,9 @@
 }
 
 html{
-    //this defines what 1 rem should be default is 16px but we want 10
-
-    font-size: 62.5%; //  10/16 1 rem = 10px = .625
-
-    //media query font-size setting
-
-
-
-
-@include respond(tab2){//less than 1200px
-    font-size: 56.2%; // 9 /16 1 rem - 9px
+    //this defines what 1 rem should be
+    font-size: 62.5%;
 }
-@include respond(tab1){//less than 900px
-    font-size: 50%;// 8/16 .5 = 50%
-}
-@include respond(phone){//less than 600px
-    font-size: 40.2%; // 9 /16 1 rem - 9px
-}
-
-@include respond(desktop){
-    font-size: 75%; // 12/16 
-}
-
-
-
-}
-
-
-
 body{
     box-sizing: border-box;
 }

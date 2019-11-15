@@ -2,21 +2,12 @@
     background-image: linear-gradient(to right bottom, $footer-gradient-dark, $footer-gradient-light);
     padding: 10rem;
     font-size: $primary-font-size;
-    @include respond (tab1){
-        padding: 8rem 0;
-    }
 
     &_navigation{
         border-top: 1px solid $color-grey-dark;
         padding: 2rem 0;
         display: inline-block;
         color: $color-grey-dark;
-
-        @include respond (tab1){
-            width: 100%;
-            text-align: center;
-
-        }
     }
     &_list{
         list-style: none;
@@ -52,11 +43,5 @@
         color: $color-grey-dark;
         width: 80%;
         float: right;
-        @include respond (tab1){
-            width: 100%;
-            text-align: center;
-            float: none;
-            
-        }
     }
 }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popular Css</title>
+</head>
+<body>
+    <style>
+        .clickMe{
+            display: block;
+            padding:  10px;
+            margin: 5px;
+            background-color: crimson;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 1rem;
+        }
+        .clickMe:focus{
+            outline: none;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .popup_Wrapper{
+            position: absolute;;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0, 0.5);
+            box-shadow: 5px 2px rgba(0,0,0, 0.5);
+            color: white; 
+            display: none;
+            
+                }
+        .popup{
+            width: 100%;
+            max-width: 300px;
+            background-color: crimson;
+            padding: 40px;
+            margin: 30px auto;
+            border-radius: 10px;   
+            position: relative;
+            transition: all .2s;
+        }
+        h1{
+            margin: 1rem 0;
+        }
+        .content{
+           margin: 1rem 0;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            background: green;
+            padding: .5rem;
+            text-align: center;
+            display: block;
+            margin-top: 2rem ;
+            border-radius: 2rem;
+
+        }
+        a:hover{
+            color: rgb(211, 211, 211);
+        }
+        .close{
+            position: absolute;
+            right: 10px;
+            top: 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 1.5rem;
+        }
+
+        .container{
+            margin: 1rem auto;
+            padding: 1rem;
+            background: #eee;
+        }
+        .main_header{
+            font-size: 3rem;
+            text-align: center;
+        }
+        form{
+            max-width: 800px;
+            width: 100%;
+            margin: 1rem auto;
+        }
+        input{
+            width: 100%;
+            margin: 1rem;
+            padding: .5rem;
+            border-radius: 1rem;
+        }
+        input:focus{
+            outline: none;
+        }
+        .info{
+            text-align: center;
+            color: #222222;
+        }
+        .valid{
+            border: 2px solid limegreen;
+        }
+        .invalid{
+            border: 2px solid crimson;
+        }
+   
+    </style>
+        <button class="clickMe">Click me</button>
+
+        <div class="popup_Wrapper">
+            <div class="popup">
+                    <p class="close">x</p>
+                <div class="popup_content">
+                    <h1>Get the Book for free</h1>
+                    <p class="content">Get the book How to raise a King totally free"</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Get Book</a>
+                </div>
+            </div>
+        </div>
+  
+<div class="container">
+    <header class="main_header">
+        New User Signup
+    </header>
+    <form>
+        <input type="text" name="username" placeholder="Username" >
+        <p class="info">Username must be alphanumeric and contain 5 - 12 characters</p>
+
+        <input type="email" name="email" placeholder="Email" >
+        <p class="info">Email must be a valid address eg info@mydomain.com</p>
+
+        <input type="text" name="password" placeholder="Password" >
+        <p class="info">Password must be alphanumeric and can contain (@ _) it should be between 8 - 20 characters</p>
+
+        <input type="text" name="telephone" placeholder="Telephone" >
+        <p class="info">Telephone must be a valid Ghana number (10 digits without country code)</p>
+
+        <input type="text" name="slug" placeholder="Profile Slug" >
+        <p class="info">The slug must contain only lowecase letter numbers and hyphens and be between 8 - 20 characters</p>
+        
+    </form>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

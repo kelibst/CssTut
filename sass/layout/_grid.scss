@@ -4,16 +4,10 @@
     max-width: $grid-width;
     margin-bottom: $space-horizontal;
     margin: 0 auto;
-    @include respond(tab1){
-        max-width: 75rem;
-    }
    
-   
+    
     &:not(:last-child){
         margin-bottom: $space-vertical;
-        @include respond(tab1){
-            margin-bottom: $space-vertical-small;
-        }
     }
     @include clearfix;
 [class^="col-"]{
@@ -22,14 +16,7 @@
     float: left;
     &:not(:last-child){
         margin-right: $space-horizontal; 
-        @include respond(tab1){
-            margin-right: 0;
-            margin-bottom: $space-vertical-small;
-        }
     }
-    @include respond(tab1) {
-        width: 100% !important;
-    }  
 }
 }
 .col-2{
