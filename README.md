@@ -1,2 +1,4 @@
 # CssTut
-# it is a basic page I built to learn css
+CSS learning github repo
+
+Nothing fancy
